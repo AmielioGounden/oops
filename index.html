@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monkey Business 🐒</title>
+
+  <!-- Open Graph (for link previews) -->
+  <meta property="og:title" content="Monkey Business 🐒" />
+  <meta property="og:description" content="A top-secret dev experiment 🍌" />
+  <meta property="og:image" content="https://your-vercel-url.vercel.app/img/gorilla.jpg" />
+  <meta property="og:url" content="https://your-vercel-url.vercel.app" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="customText">This is very irresponsible Shreya!☀️</h1>
+    <img src="img/gorilla.jpg" alt="Gorilla" class="gorilla-img" />
+
+  
+
+  <script>
+    const input = document.getElementById('textInput');
+    const button = document.getElementById('updateBtn');
+    const display = document.getElementById('customText');
+
+    button.addEventListener('click', () => {
+      const text = input.value.trim();
+      if (text) {
+        display.textContent = text;
+        input.value = '';
+      }
+    });
+  </script>
+</body>
+</html>
